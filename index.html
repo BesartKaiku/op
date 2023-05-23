@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function num(){
+            let input1= document.getElementById("userInput").value;
+            let input2= document.getElementById("uInput").value;
+            
+            let c=Math.sqrt(input1**(2)+ input2**(2));
+            alert(c)
+        }
+
+  
+    </script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="triangle"> 
+            <form  id = "form" onsubmit="return false;">
+            <input type="number" class="right" id="userInput"/>
+            <input type="number" class="bottom" id="uInput"/>
+            
+            <input type="submit" onclick="num();" value="Gjej Hipotenuzen" class="sub"/>
+            </form>
+
+            
+            
+        </div>
+    </div>
+</body>
+</html>
